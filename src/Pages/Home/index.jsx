@@ -3,7 +3,7 @@ import "./Index.css";
 function Home() {
   return (
     <>
-      <div>HOME</div>
+      <div className="m-0">HOME</div>
     </>
   );
 }
