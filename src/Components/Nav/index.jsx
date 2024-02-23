@@ -1,8 +1,9 @@
 import { Link, NavLink } from "react-router-dom";
 
 const Nav = () => {
+  const aStyle = " text-cyan-900";
   return (
-    <nav className="flex justify-between items-center bg-cyan-300  p-3">
+    <nav className="flex justify-between items-center bg-cyan-300 px-4">
       <ul className="flex items-center gap-2">
         <li className="p-5 font-bold">
           <Link to="/">StoreAZ</Link>
@@ -10,13 +11,7 @@ const Nav = () => {
         <li>
           <NavLink
             to="/account"
-            style={({ isActive, isPending, isTransitioning }) => {
-              return {
-                textDecoration: isActive ? "overline #212F3C" : "",
-                color: isPending ? "red" : "#212F3C",
-                viewTransitionName: isTransitioning ? "slide" : "",
-              };
-            }}
+            className={({ isActive }) => (isActive ? aStyle : undefined)}
           >
             Herramientas
           </NavLink>
