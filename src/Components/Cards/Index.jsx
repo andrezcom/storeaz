@@ -1,21 +1,11 @@
 import "./Index.css";
 
-const Card = ({
-  id,
-  name,
-  image,
-  price,
-  brand,
-  description,
-  active,
-  stock,
-}) => {
-  console.log(name, image, price, brand);
+const Card = () => {
   return (
     <div className="card">
       <img
         className="w-full h-full object-cover"
-        src={image}
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3dGrx_W5jmTLaXAwTJZAKM-9wrQYvirFhJAZNQr9N7i7uGDNumqPsnkmBgsKCB7J8Pb4&usqp=CAU"
         alt="Gato hidraulico"
       />
       <div className="p-5 flex flex-col gap-3">
@@ -25,7 +15,7 @@ const Card = ({
         </div>
 
         <h2 className="product-title" title="gatoh1">
-          {name}
+          Gato Hidraulico{" "}
         </h2>
 
         <div>
